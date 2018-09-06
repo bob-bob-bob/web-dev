@@ -16,6 +16,10 @@
 <!--[endif]-->
 
 <style>
+* {
+    box-sizing: border-box;
+
+}
 body{
 	width: 80%;
 	margin: auto;
@@ -63,7 +67,7 @@ li.dropdown {
     min-width: 60%;
 	min-height: 20%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    right: 190px;
+    right: 10%;
 	-webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2; /* Firefox */
     column-count: 2;
@@ -103,6 +107,22 @@ li.dropdown {
     }
 }
 
+.freelogo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    
+}
+ .freelogo-container > img {
+     height: 250px; 
+     width: 300px;
+     padding-right: 20px;
+     padding-left: 20px;
+     
+
+}
+
 </style>
 </head>
 <body>
@@ -124,41 +144,23 @@ li.dropdown {
 </ul>
   <br>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    
-
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
 
       <div class="item active">
         <img src="images/hot_choc_banner.png" alt="Chania" width="80%">
-        <div class="carousel-caption">
-          <h3>Hot Choc Pudding</h3>
-          <p>Join us at 8PM on Fridays for yummy hot choc.</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="images/bike_tour_banner.png" alt="Chania" width="80%">
-        <div class="carousel-caption">
-          <h3>Chania</h3>
-          <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-        </div>
       </div>
     
       <div class="item">
         <img src="images/vine_tour_banner.png" alt="Flower" width="80%">
-        <div class="carousel-caption">
-          <h3>Flowers</h3>
-          <p>Beautiful flowers in Kolymbari, Crete.</p>
-        </div>
       </div>
 
       <div class="item">
         <img src="images/bread_break_banner.png" alt="Flower" width="80%">
-        <div class="carousel-caption">
-          <h3>Bread and Breakfast</h3>
-          <p>7 - 9 AM</p>
-        </div>
       </div>
   
     </div>
@@ -174,5 +176,12 @@ li.dropdown {
     </a>
 </div>
 
+<div class="freelogo-container">
+
+    <img alt="" src="images/free_wifi_logo_1.jpg" />
+    <img alt="" src="images/free_pickup_logo_1.jpg" />
+    <img alt="" src="images/free_parking_logo_1.jpg" />
+
+</div>
 </body>
 </html>
