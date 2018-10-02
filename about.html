@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hostel Nelson</title>
+<link rel="stylesheet" href="css/master.css" type="text/css">
+
+<script src="js/slide.min.js"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]-->
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<!--[endif]-->
+</head>
+<body>
+<header>
+<div class="logo-container">
+	<a href="index.html"><img src="images/web_logo_1.png" /></a>
+</div>
+<ul>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="#news">About</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Events</a>
+    <div class="dropdown-content">
+      <a href="winetour.html">Vineyard Tours</a>
+      <a href="biketour.html">Bike Tours</a>
+      <a href="#">Hot Choc Pudding</a>
+      <a href="#">Movie and Games Night</a>
+      <a href="#">Bread and Breakfast</a>
+    </div>
+  </li>
+  <li><a href="#news">Book</a></li>
+</ul>
+</header>
+  <br>
+<div class="about-container">
+<!-- Page Content -->
+<div class="aboutcontent">
+	<div class="aboutrow">
+		<div class="aboutcolumn aboutleft">
+			<h5>Contact Us</h5>
+			<p>Phone: 12 345 6789</p>
+			<p>Email: info@hostelnelson.co.nz</p>
+			<p>Facebook: facebook.com/hostelnelson</p>
+            <p>Twitter: @hostelnelson</p>
+		</div>
+		
+		<div class="aboutcolumn aboutright">
+			<h5>Find Us</h5>
+			<div id="map" style="width:400px;height:400px;"></div>
+		</div>
+	</div>
+</div>
+</div>
+
+<footer class="footer">
+       <div class="footrow">
+  			<div class="footcolumn">
+  				<h4>Site Map</h4>
+  				<p><a href="#">Book</a></p>
+  				<p>Events</p>
+					<h6><a href="winetour.html">Vineyard Tour</a></h6>
+					<h6><a href="biketour.html">Bike Tour</a></h6>
+					<h6><a href="#">Hot Choc Pudding</a></h6>
+					<h6><a href="#">Movie and Games Night</a></h6>
+					<h6><a href="#">Bread and Breakfast</a></h6>
+  				<p><a href="#">About</a></p>
+  				<p><a href="contact.html">Contact</a></p>
+  			</div>
+  			<div class="footcolumn">
+  				<h4>Useful Stuff</h4>
+  				<p><a href="#">Privacy Policy</a></p>
+  				<p><a href="#">Cancellations</a></p>
+  				<p><a href="#">FAQ</a></p>
+  			</div>
+  			<div class="footcolumn">
+  				<h4>Links</h4>
+  				<p><a href="#">Trip Advisor</a></p>
+  				<p><a href="#">Copyright</a></p>
+  				<p><a href="#">Local Attractions</a></p>
+  			</div>
+	   </div>
+	   <p style="text-align:center">Copyright 2018 Nelson Hostel</p>
+    </footer>
+
+<script>
+    function myMap() {
+        var myCenter = new google.maps.LatLng(-41.270674, 173.282018);
+        var mapCanvas = document.getElementById("map");
+        var mapOptions = { center: myCenter, zoom: 18 };
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({ position: myCenter });
+        marker.setMap(map);
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCS4m6FrUemAUyDqDKLVyEkYx8RQEi-FL4&callback=myMap"></script>
+</body>
+</html>
