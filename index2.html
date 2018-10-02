@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hostel Nelson</title>
+    <link rel="stylesheet" href="css/master.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]-->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!--[endif]-->
+</head>
+<body>
+<header>
+<div class="logo-container">
+	<a href="index2.html"><img src="images/web_logo_1.png" /></a>
+</div>
+<ul>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Events</a>
+    <div class="dropdown-content">
+      <a href="winetour.html">Vineyard Tours</a>
+      <a href="biketour.html">Bike Tours</a>
+      <a href="#">Hot Choc Pudding</a>
+      <a href="#">Movie and Games Night</a>
+      <a href="#">Bread and Breakfast</a>
+    </div>
+  </li>
+  <li><a href="#">Book</a></li>
+</ul>
+</header>
+  <br>
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+<div class="slideshow">
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="images/hot_choc_banner.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/bike_tour_banner.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/vine_tour_banner.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/bread_break_banner.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/game_movie_banner.png" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+
+<div class="freelogo-container">
+    <img alt="Free Wifi Logo" src="images/free_wifi_logo_1.jpg" />
+    <img alt="Free Pickup Logo" src="images/free_pickup_logo_1.jpg" />
+    <img alt="Free Parking Logo" src="images/free_parking_logo_1.jpg" />
+</div>
+
+<div class="button-container">
+    <a href="https://www.nelsontasman.nz/" class="nelsonButton nelsonButton1" target="new">Guide to Nelson</a>
+</div>
+
+<div class="feedback">
+<hr>
+ <h3>Happy Guests</h3>
+ <div class="slideshow-container">
+  <div class="slideshow">
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides2 fade">
+    <p>
+      	“… well it certainly wasn’t what I expected, but that’s not a bad thing. The hostel area itself 
+       	is quite an welcoming area so you have to come prepared to do a lot of relaxing. It is close to 
+       	the town area with a nice river walk to guide you there and has a walk to the centre of NZ. ”
+    </p>
+  </div>
+
+  <div class="mySlides2 fade">
+    <p>
+        “ … as a business owner I’m constantly looking for new experiences to help reinforce what I provide to my customers. 
+        The welcoming and facilities offered by the hostel were extraordinary and made me think about how to  improved my customer relations.”
+    </p>
+  </div>
+
+  <div class="mySlides2 fade">
+    <p>
+         “… I think my grand mother is feeling pretty freaked out about the idea of staying in a hostel with the young people they usually attract. 
+         We didn’t realise just how inviting it was to all age groups. Perhaps if we had known some things about it before hand we would have stayed at hostels before.”
+    </p>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+   <hr>
+<br>
+</div>
+</div>
+
+    <footer class="footer">
+       <div class="footrow">
+  			<div class="footcolumn">
+  				<h4>Site Map</h4>
+  				<p><a href="#">Book</a></p>
+  				<p>Events</p>
+					<h6><a href="winetour.html">Vineyard Tour</a></h6>
+					<h6><a href="biketour.html">Bike Tour</a></h6>
+					<h6><a href="#">Hot Choc Pudding</a></h6>
+					<h6><a href="#">Movie and Games Night</a></h6>
+					<h6><a href="#">Bread and Breakfast</a></h6>
+  				<p><a href="about.html">About</a></p>
+  				<p><a href="contact.html">Contact</a></p>
+  			</div>
+  			<div class="footcolumn">
+  				<h4>Useful Stuff</h4>
+  				<p><a href="#">Privacy Policy</a></p>
+  				<p><a href="#">Cancellations</a></p>
+  				<p><a href="#">FAQ</a></p>
+  			</div>
+  			<div class="footcolumn">
+  				<h4>Links</h4>
+  				<p><a href="#">Trip Advisor</a></p>
+  				<p><a href="#">Copyright</a></p>
+  				<p><a href="#">Local Attractions</a></p>
+  			</div>
+	   </div>
+	   <p style="text-align:center">Copyright 2018 Nelson Hostel</p>
+    </footer>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+    var slides, dots;
+
+    function showSlides() {
+        var i;
+        slides = document.getElementsByClassName("mySlides");
+        dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+       }
+       slideIndex++;
+       if (slideIndex > slides.length) { slideIndex = 1 }
+       for (i = 0; i < dots.length; i++) {
+           dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 4 seconds
+    }
+
+    function plusSlides(position) {
+        slideIndex += position;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        else if (slideIndex < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+
+    function currentSlide(index) {
+        if (index > slides.length) { index = 1 }
+        else if (index < 1) { index = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[index - 1].style.display = "block";
+        dots[index - 1].className += " active";
+    }
+</script>
+</body>
+</html>
